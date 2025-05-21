@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop - Product Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ModernShop</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span>Minimalist Watch</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="images (1).jpeg" alt="Minimalist Watch" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active" data-image="/placeholder.svg?height=600&width=600">
+                            <img src="/placeholder.svg?height=100&width=100" alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail" data-image="/placeholder.svg?height=600&width=600&text=Image 2">
+                            <img src="/placeholder.svg?height=100&width=100&text=Image 2" alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail" data-image="/placeholder.svg?height=600&width=600&text=Image 3">
+                            <img src="/placeholder.svg?height=100&width=100&text=Image 3" alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail" data-image="/placeholder.svg?height=600&width=600&text=Image 4">
+                            <img src="/placeholder.svg?height=100&width=100&text=Image 4" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info-detail">
+                    <div class="product-tag">New</div>
+                    <h1>Minimalist Watch</h1>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(24 reviews)</span>
+                    </div>
+                    <div class="product-price-detail">
+                        <span class="current-price">$129.99</span>
+                    </div>
+                    <div class="product-description">
+                        <p>This minimalist watch features a clean design with premium materials. The sleek stainless steel case houses a precision quartz movement, while the genuine leather strap provides comfort and durability. Water-resistant up to 30 meters, this versatile timepiece is perfect for everyday wear.</p>
+                    </div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <div class="color-options">
+                                <div class="color-option active" style="background-color: #000;"></div>
+                                <div class="color-option" style="background-color: #964B00;"></div>
+                                <div class="color-option" style="background-color: #808080;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10" id="quantity">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="btn add-to-cart-detail">Add to Cart</button>
+                        <button class="btn-outline wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-meta">
+                        <p><strong>SKU:</strong> MS-W-001</p>
+                        <p><strong>Category:</strong> <a href="#">Accessories</a></p>
+                        <p><strong>Tags:</strong> <a href="#">Watch</a>, <a href="#">Minimalist</a>, <a href="#">Fashion</a></p>
+                    </div>
+                    <div class="product-share">
+                        <span>Share:</span>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews (24)</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Introducing our Minimalist Watch, a perfect blend of style and functionality. This timepiece embodies modern design principles with its clean dial and sleek profile.</p>
+                        <p>The watch features a premium stainless steel case that's built to last, housing a reliable Japanese quartz movement for accurate timekeeping. The scratch-resistant mineral glass protects the face while maintaining crystal clear visibility.</p>
+                        <p>The genuine leather strap ages beautifully with wear, developing a unique patina over time. Adjustable to fit most wrist sizes, the strap provides all-day comfort for the wearer.</p>
+                        <p>Water-resistant up to 30 meters, this watch can handle splashes and brief immersion in water, making it suitable for everyday wear. The minimalist design ensures it pairs well with both casual and formal attire.</p>
+                    </div>
+                    <div class="tab-panel" id="specifications">
+                        <h3>Product Specifications</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>Case Material</td>
+                                <td>Stainless Steel</td>
+                            </tr>
+                            <tr>
+                                <td>Case Diameter</td>
+                                <td>40mm</td>
+                            </tr>
+                            <tr>
+                                <td>Case Thickness</td>
+                                <td>7mm</td>
+                            </tr>
+                            <tr>
+                                <td>Band Material</td>
+                                <td>Genuine Leather</td>
+                            </tr>
+                            <tr>
+                                <td>Band Width</td>
+                                <td>20mm</td>
+                            </tr>
+                            <tr>
+                                <td>Movement</td>
+                                <td>Japanese Quartz</td>
+                            </tr>
+                            <tr>
+                                <td>Water Resistance</td>
+                                <td>30 Meters</td>
+                            </tr>
+                            <tr>
+                                <td>Glass</td>
+                                <td>Mineral Crystal</td>
+                            </tr>
+                            <tr>
+                                <td>Battery Life</td>
+                                <td>Approximately 2 Years</td>
+                            </tr>
+                            <tr>
+                                <td>Warranty</td>
+                                <td>1 Year International</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-panel" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <div class="rating-number">4.5</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="total-reviews">Based on 24 reviews</div>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 stars</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 75%;"></div>
+                                    </div>
+                                    <span>18</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 stars</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 17%;"></div>
+                                    </div>
+                                    <span>4</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 stars</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 8%;"></div>
+                                    </div>
+                                    <span>2</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 stars</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 0%;"></div>
+                                    </div>
+                                    <span>0</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 star</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 0%;"></div>
+                                    </div>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-list">
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">
+                                        <img src="/placeholder.svg?height=50&width=50" alt="Reviewer">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>John D.</h4>
+                                        <div class="review-date">June 15, 2023</div>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-content">
+                                    <h5>Excellent quality and design</h5>
+                                    <p>I've been wearing this watch for about a month now and I'm very impressed with the quality. The minimalist design goes with everything in my wardrobe and it's comfortable enough to wear all day. Highly recommend!</p>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">
+                                        <img src="/placeholder.svg?height=50&width=50" alt="Reviewer">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Sarah M.</h4>
+                                        <div class="review-date">May 28, 2023</div>
+                                    </div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="review-content">
+                                    <h5>Beautiful watch, slightly large</h5>
+                                    <p>The watch is beautiful and exactly as pictured. The only reason I'm giving 4 stars instead of 5 is that it's a bit larger than I expected. Still wearable for me but something to consider if you have smaller wrists.</p>
+                                </div>
+                            </div>
+                            <!-- More reviews would go here -->
+                        </div>
+                        <div class="write-review">
+                            <h3>Write a Review</h3>
+                            <form class="review-form">
+                                <div class="form-group">
+                                    <label>Your Rating</label>
+                                    <div class="rating-select">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-title">Review Title</label>
+                                    <input type="text" id="review-title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="review-content">Your Review</label>
+                                    <textarea id="review-content" rows="5" required></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="reviewer-name">Your Name</label>
+                                        <input type="text" id="reviewer-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reviewer-email">Your Email</label>
+                                        <input type="email" id="reviewer-email" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn">Submit Review</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Related Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Wallet</h3>
+                        <p class="product-price">$59.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Related Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sunglasses</h3>
+                        <p class="product-price">$89.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Related Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bracelet Set</h3>
+                        <p class="product-price">$49.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=300&width=300" alt="Related Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Belt</h3>
+                        <p class="product-price">$39.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ModernShop</h3>
+                    <p>Your destination for modern lifestyle products with premium quality and design.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="products.html">Featured</a></li>
+                        <li><a href="products.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Modern St, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@modernshop.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ModernShop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

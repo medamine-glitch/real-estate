@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop - Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ModernShop</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Checkout</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <span>Checkout</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <h2>Billing Details</h2>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name (Optional)</label>
+                            <input type="text" id="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country / Region *</label>
+                            <select id="country" required>
+                                <option value="">Select a country</option>
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="au">Australia</option>
+                                <!-- More countries would be added here -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="street">Street Address *</label>
+                            <input type="text" id="street" placeholder="House number and street name" required>
+                            <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Town / City *</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State / Province *</label>
+                            <select id="state" required>
+                                <option value="">Select a state</option>
+                                <option value="al">Alabama</option>
+                                <option value="ak">Alaska</option>
+                                <option value="az">Arizona</option>
+                                <!-- More states would be added here -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP / Postal Code *</label>
+                            <input type="text" id="zip" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="create-account">
+                                <label for="create-account">Create an account?</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="ship-different">
+                                <label for="ship-different">Ship to a different address?</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-notes">Order Notes (Optional)</label>
+                            <textarea id="order-notes" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-summary">
+                    <h2>Your Order</h2>
+                    <div class="summary-table">
+                        <div class="summary-header">
+                            <span>Product</span>
+                            <span>Subtotal</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Minimalist Watch × 1</span>
+                            <span>$129.99</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Designer Backpack × 1</span>
+                            <span>$89.99</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Wireless Earbuds × 1</span>
+                            <span>$149.99</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$369.97</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>$369.97</span>
+                        </div>
+                    </div>
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <input type="radio" id="payment-bank" name="payment" checked>
+                            <label for="payment-bank">Direct Bank Transfer</label>
+                            <div class="payment-description">
+                                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                            </div>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="payment-card" name="payment">
+                            <label for="payment-card">Credit / Debit Card</label>
+                            <div class="payment-description">
+                                <p>Pay securely using your credit or debit card.</p>
+                                <div class="card-icons">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-amex"></i>
+                                    <i class="fab fa-cc-discover"></i>
+                                </div>
+                                <div class="card-form">
+                                    <div class="form-group">
+                                        <label for="card-number">Card Number</label>
+                                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiry-date">Expiry Date</label>
+                                            <input type="text" id="expiry-date" placeholder="MM/YY">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" placeholder="123">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" id="payment-paypal" name="payment">
+                            <label for="payment-paypal">PayPal</label>
+                            <div class="payment-description">
+                                <p>Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
+                                <div class="paypal-icon">
+                                    <i class="fab fa-paypal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms-agreement">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms">I have read and agree to the website <a href="#">terms and conditions</a> *</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn place-order-btn">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ModernShop</h3>
+                    <p>Your destination for modern lifestyle products with premium quality and design.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="products.html">New Arrivals</a></li>
+                        <li><a href="products.html">Featured</a></li>
+                        <li><a href="products.html">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Modern St, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@modernshop.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ModernShop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
